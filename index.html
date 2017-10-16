@@ -29,7 +29,23 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-108135143-1');
+      gtag('config', 'UA-108135143-1', {
+        'cookie_name': 'symcookie',
+        'cookie_expires': 2592000, // 30 days
+        'link_attribution': true
+        });
+
+      // find out how long it takes from request for my site till the last response is returned
+      if(window.performace){
+        var reqStart = window.performace.timing.requestStart()
+        var reqEnd = window.performace.timing.responseEnd()
+        var time = Math.round(reqEnd - reqStart)
+        gtag('event', 'timing_complete', {
+            'name':'Page load time'.
+            'value': time,
+            'event_category': 'page load'
+        });
+      }
     </script>
 
 
@@ -51,7 +67,7 @@
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 					Menu <i class="fa fa-bars"></i>
 				</button>
-				<a class="navbar-brand page-scroll" href="#page-top">
+				<a id="home" class="navbar-brand page-scroll" href="#page-top">
 					<i class="fa fa-terminal"></i> <span class="light">SYMC</span>
 				</a>
 			</div>
@@ -64,16 +80,16 @@
 						<a href="#page-top"></a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#about">About</a>
+						<a id="toAbout" class="page-scroll" href="#about">About</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#experience">Experience</a>
+						<a id="toExperience" class="page-scroll" href="#experience">Experience</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#skills">Skills</a>
+						<a id="toSkills" class="page-scroll" href="#skills">Skills</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#contact">Contact</a>
+						<a id="toContact" class="page-scroll" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -91,7 +107,7 @@
 						<img id="headshot" src="img/headshot.jpg" alt="Sung Yan Micah Chao" class="img-circle">
 						<h1>Sung Yan Micah Chao</h1>
 						<p class="intro-text">Software Engineer</p>
-						<a href="#about" class="btn btn-circle page-scroll">
+						<a id="next" href="#about" class="btn btn-circle page-scroll">
 							<i class="fa fa-angle-down animated"></i>
 						</a>
 					</div>
@@ -111,10 +127,10 @@
 				<!-- Buttons -->
 				<ul class="list-inline banner-social-buttons">
 					<li>
-						<a href="https://github.com/smc395" target="_blank" rel="noopener" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+						<a id="github" href="https://github.com/smc395" target="_blank" rel="noopener" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/in/sungyanmicahchao/" target="_blank" rel="noopener" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square"></i> <span class="network-name">LinkedIn</span></a>
+						<a id="linkedin" href="https://www.linkedin.com/in/sungyanmicahchao/" target="_blank" rel="noopener" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square"></i> <span class="network-name">LinkedIn</span></a>
 					</li>
 				</ul>
 			</div>
@@ -201,7 +217,7 @@
 			<div class="col-lg-8 col-lg-offset-2">
 				<h2>Contact</h2>
 				<p>
-					<a href="mailto:symchao@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;symchao@gmail.com</a>
+					<a id="email" href="mailto:symchao@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;symchao@gmail.com</a>
 				</p>
 			</div>
 		</div>
@@ -210,7 +226,7 @@
 	<!-- Footer -->
 	<footer>
 		<div class="container text-center">
-			<p>Thanks to <a href="http://fontawesome.io/icons/" target="_blank" rel="noopener">Font Awesome</a> and <a href="https://startbootstrap.com/" target="_blank" rel="noopener">Blackrock Digital</a> for the resources to make this site</p>
+			<p>Thanks to <a id="font_awesome" href="http://fontawesome.io/icons/" target="_blank" rel="noopener">Font Awesome</a> and <a id="black_rock" href="https://startbootstrap.com/" target="_blank" rel="noopener">Blackrock Digital</a> for the resources to make this site</p>
 			<small>Copyright &copy; Sung Yan Micah Chao 2017. All rights reserved.</small>
 		</div>
 	</footer>
