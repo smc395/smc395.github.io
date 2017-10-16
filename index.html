@@ -2,6 +2,31 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108135143-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108135143-1', {
+        'cookie_name': 'symcookie',
+        'cookie_expires': 2592000, // 30 days
+        'link_attribution': true
+        });
+
+      // find out how long it takes from request for my site till the last response is returned
+      if(window.performace){
+        var reqStart = window.performace.timing.requestStart();
+        var reqEnd = window.performace.timing.responseEnd();
+        var time = Math.round(reqEnd - reqStart);
+        gtag('event', 'timing_complete', {
+            'name':'Page load time'.
+            'value': time,
+            'event_category': 'page load'
+        });
+      }
+    </script>
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,33 +46,6 @@
 
 	<!-- Theme CSS -->
 	<link href="css/grayscale.min.css" rel="stylesheet">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108135143-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-108135143-1', {
-        'cookie_name': 'symcookie',
-        'cookie_expires': 2592000, // 30 days
-        'link_attribution': true
-        });
-
-      // find out how long it takes from request for my site till the last response is returned
-      if(window.performace){
-        var reqStart = window.performace.timing.requestStart()
-        var reqEnd = window.performace.timing.responseEnd()
-        var time = Math.round(reqEnd - reqStart)
-        gtag('event', 'timing_complete', {
-            'name':'Page load time'.
-            'value': time,
-            'event_category': 'page load'
-        });
-      }
-    </script>
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
