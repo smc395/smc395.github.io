@@ -16,14 +16,14 @@
         });
 
       // find out how long it takes from request for my site till the last response is returned
-      if(window.performace){
-        var reqStart = window.performace.timing.requestStart();
-        var reqEnd = window.performace.timing.responseEnd();
+      if(window.performance){
+        var reqStart = performance.timing.requestStart;
+        var reqEnd = performance.timing.responseEnd;
         var time = Math.round(reqEnd - reqStart);
+
         gtag('event', 'timing_complete', {
-            'name':'Page load time'.
-            'value': time,
-            'event_category': 'page load'
+            'name': 'Page load time',
+            'value': time
         });
       }
     </script>
