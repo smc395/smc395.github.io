@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Grayscale v3.3.7+1 (http://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2018 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -353,5 +353,23 @@ body {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
+  letter-spacing: 1px;
+}
+.skills-item {
+  display: inline-block;
+}
+.skills-item:hover {
+  color: #42DCA3;
+}
+.skills-list {
+  font-size: 3rem;
+  padding-left: 0;
+  list-style: none;
+}
+.skills-section-title {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
   letter-spacing: 1px;
 }
