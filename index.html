@@ -41,9 +41,9 @@
 
 	<!-- Custom Fonts -->
 	<!-- Font Awesome CDN -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-	<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
 	<!-- Theme CSS -->
@@ -200,56 +200,84 @@
 	<section id="skills" class="content-section text-center">
 		<h2>Skills</h2>
 		<div class="container-fluid">
-			<div class="skills-section col-xs-12 col-sm-3 col-md-3">
-                <h3 style="text-decoration: underline;">Languages</h3>
-                <div class="row">
-                	<div class="skills-text col-xs-6 col-sm-6 col-md-6">
-                        <p>Java</p>
-                        <p>Git</p>
-                        <p>SQL</p>
-                        <p>Python</p>
-                    </div>
-                    <div class="skills-text col-xs-6 col-sm-6 col-md-6">
-                        <p>Bootstrap 3</p>
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
+			<!-- Languages -->
+			<div class="row">
+				<div class="skills-section col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h3 class="skills-section-title">Languages</h3>
+					<ul class="skills-icon-list">
+						<li class="skills-icon-item">
+							<i class="fab fa-java"></i>
+						</li>
+						<li class="skills-icon-item">
+							<i class="fab fa-python"></i>
+						</li>
+						<!--
+							<li class="skills-icon-item">
+								<i class="fab fa-html5"></i>
+							</li>
+							<li class="skills-icon-item">
+								<i class="fab fa-css3-alt"></i>
+							</li>
+							<li class="skills-icon-item">
+								<i class="fab fa-js-square"></i>
+							</li>
+						-->
+						<li class="skills-icon-item">
+							<i class="fab fa-git"></i>
+						</li>
+						<li class="skills-icon-item skills-icon-text-size">
+							<span>SQL</span>
+						</li>
+						<li class="skills-icon-item skills-icon-text-size">
+							<span>VBA</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- OS -->
+			<div class="row">
+				<div class="skills-section col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h3 class="skills-section-title">Operating Systems</h3>
+					<ul class="skills-icon-list">
+						<li class="skills-icon-item">
+							<i class="fab fa-ubuntu"></i>
+						</li>
+						<li class="skills-icon-item">
+							<i class="fab fa-windows"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Software -->
+			<div class="row">
+				<div class="skills-section col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                	<h3 class="skills-section-title">Software</h3>
+                	<div>
+                		<ul class="skills-text-list">
+                			<li class="skills-text-item"><i class="fab fa-angular"></i>&nbsp;Angular 2</li>
+                			<li class="skills-text-item">DynamoDB</li>
+	                        <li class="skills-text-item">Flask</li>
+	                        <li class="skills-text-item"><i class="fab fa-github"></i>&nbsp;GitHub</li>
+	                        <li class="skills-text-item">Qlikview</li>
+	                        <li class="skills-text-item">Sublime Text</li>
+	                        <li class="skills-text-item">SQL Server Management Studio (SSMS)</li>
+	                        <li class="skills-text-item">Microsoft Office (Word, Excel, PowerPoint, Access)</li>
+                		</ul>
                     </div>
                 </div>
             </div>
-            <div class="skills-section col-xs-12 col-sm-3 col-md-3">
-                <h3 style="text-decoration: underline;">OS</h3>
-                <div class="row">
-                	<div class="skills-text col-xs-12 col-sm-12 col-md-12">
-                        <p>Ubuntu</p>
-                        <p>Windows</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-section col-xs-12 col-sm-3 col-md-3">
-                <h3 style="text-decoration: underline;">Software</h3>
-                <div class="row">
-                	<div class="skills-text col-xs-12 col-sm-12 col-md-12">
-                		<p>Angular 2</p>
-                        <p>DynamoDB</p>
-                        <p>Eclipse</p>
-                        <p>Flask</p>
-                        <p>GitHub</p>
-                        <p>Qlikview</p>
-                        <p>Selenium</p>
-                        <p>Sublime Text</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-section col-xs-12 col-sm-3 col-md-3">
-                <h3 style="text-decoration: underline;">Other</h3>
-                <div class="row">
-                    <div class="skills-text col-xs-12 col-sm-12 col-md-12">
-                        <p>Agile/Scrum</p>
-                        <p>Project Management</p>
-                        <p>Technical Documentation</p>
-                        <p>Requirements Analysis</p>
-                    </div>
+            <!-- Other -->
+            <div class="row">
+            	<div class="skills-section col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	                <h3 class="skills-section-title">Other</h3>
+	                <div>
+	                	<ul class="skills-text-list">
+		                    <li class="skills-text-item">Agile/Scrum</li>
+		                    <li class="skills-text-item">Project Management</li>
+		                    <li class="skills-text-item">Technical Documentation</li>
+		                    <li class="skills-text-item">Requirements Analysis</li>
+	                	</ul>
+	                </div>
                 </div>
             </div>
 		</div>
@@ -270,8 +298,8 @@
 	<!-- Footer -->
 	<footer>
 		<div class="container text-center">
-			<p>Thanks to <a id="font_awesome" href="https://fontawesome.com/icons?d=gallery" target="_blank" rel="noopener">Font Awesome</a> and <a id="black_rock" href="https://startbootstrap.com/" target="_blank" rel="noopener">Blackrock Digital</a> for the resources to make this site</p>
-			<small>Copyright &copy; Sung Yan Micah Chao 2017-2018. All rights reserved.</small>
+			<p class="thanks">Thanks to <a id="font_awesome" href="https://fontawesome.com/icons?d=gallery" target="_blank" rel="noopener">Font Awesome</a> and <a id="black_rock" href="https://startbootstrap.com/" target="_blank" rel="noopener">Blackrock Digital</a> for the resources to make this site</p>
+			<small>Copyright &copy; Sung Yan Micah Chao 2017-2019. All rights reserved.</small>
 		</div>
 	</footer>
 

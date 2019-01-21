@@ -4,7 +4,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: @font-family;
     color: white;
     background-color: black;
 }
@@ -22,13 +22,19 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: @font-family;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
+p.thanks {
+    font-family: @font-family;
+    margin: 0 0 15px;
+    font-size: 14px;
+}
+
 p {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: @font-family;
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
@@ -78,7 +84,7 @@ div.skills-section {
     margin-bottom: 0;
     border-bottom: 1px solid fade(white, 30%);
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: @font-family;
     background-color: black;
     .navbar-toggle {
         color: white;
@@ -149,7 +155,7 @@ div.skills-section {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/hi-photo.jpg) no-repeat bottom center scroll;
+    background: url(@background-image-url) no-repeat bottom center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -260,7 +266,7 @@ div.skills-section {
     width: 100%;
     padding: 50px 0;
     color: white;
-    background: url(../img/hi-photo.jpg) no-repeat center center scroll;
+    background: url(@background-image-url) no-repeat center center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -291,7 +297,7 @@ div.skills-section {
 
 .btn {
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: @font-family;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -368,7 +374,7 @@ body {
 .exp-title {
     margin: 0 0 10px;
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: @font-family;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -376,14 +382,58 @@ body {
 .exp-company {
     margin: 0 0 10px;
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: @font-family;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .exp-dates {
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: @font-family;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+.skills-icon-list {
+    font-size: 3em;
+    padding-left: 0;
+    list-style: none;
+}
+
+.skills-icon-item {
+    display: inline-block;
+    &:hover {
+        color: @primary;
+    }
+    &:not(:last-child) {
+        margin-right: .5rem;
+    }
+}
+
+.skills-icon-text-size {
+    font-size: 32px;
+}
+
+.skills-text-list {
+    font-size: 2rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.skills-text-item {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    &:hover {
+        color: @primary;
+    }
+}
+
+.skills-section-title {
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    font-family: @font-family;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: underline;
 }
