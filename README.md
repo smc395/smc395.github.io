@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/symchao/16886f3c-aa1e-43a7-a6cc-74bbb46f65ea/31ca74e8-a6f6-4e9e-9607-e48e528f2440/_apis/work/boardbadge/eaa55038-1edd-47cb-998a-9bfcb1309150)](https://dev.azure.com/symchao/16886f3c-aa1e-43a7-a6cc-74bbb46f65ea/_boards/board/t/31ca74e8-a6f6-4e9e-9607-e48e528f2440/Microsoft.RequirementCategory)
 # SYMC Website
 
 ## Hello!
